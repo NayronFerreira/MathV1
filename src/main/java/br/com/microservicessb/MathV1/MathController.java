@@ -11,7 +11,7 @@ public class MathController {
     @RequestMapping (value = "/soma/{number1}/{number2}", method = RequestMethod.GET)
     public Double sum (@PathVariable ("number1") String number1, @PathVariable ("number2") String number2) throws Exception {
         if ( !isNumeric(number1) || !isNumeric (number2)){
-            throw new Exception("Digite número inteiros");
+            throw new UnsupportedOperationException("Digite números inteiros");
         } else{
             Double soma = convertToDouble(number1) + convertToDouble(number2);
             return soma;
