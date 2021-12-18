@@ -1,4 +1,4 @@
-package br.com.microservicessb.MathV1.Exceptions.handler;
+package br.com.microservicessb.MathV1.handler;
 
 import br.com.microservicessb.MathV1.Exceptions.ExceptionResponse;
 import br.com.microservicessb.MathV1.Exceptions.UnsuportedMathOperationException;
